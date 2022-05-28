@@ -1,19 +1,10 @@
 import "./styles.css";
-import Button from "./Components/Assets/Button";
-import PageSelector from "./Components/Assets/PageSelector";
-import TagBtn from "./Components/Assets/TagBtn";
-import TeamMemberCard from "./Components/Assets/TeamMemberCard";
-import TestimonialCard from "./Components/Assets/TestimonialCard";
-import BlogPost from "./Components/Assets/BlogPost";
-import ServiceCard from "./Components/Assets/ServiceCard";
-import FAQ from "./Components/Assets/FAQ";
-import EventTemplate from "./Components/Assets/EventTemplate";
-import SubscribeSection from "./Components/Assets/SubscribeSection";
-import PricingTemplate from "./Components/Assets/PricingTemplate";
-import NavDesktop from "./Components/Assets/NavDesktop";
+
 
 export default function App() {
+  let navLinks = [{itemName:"Home",itemlink:""},{itemName:"Bookstore",itemlink:""},{itemName:"Best Selling",itemlink:""},{itemName:"New Arrivals",itemlink:""},{itemName:"Features Books",itemlink:""},{itemName:"Talent",itemlink:""},{itemName:"Pages",itemlink:"",dropdown:true},{itemName:"Contact",itemlink:""}];
   return (
+
     <div className="App">
       {/* <Button size="x-lg" type="default" text="Button" />
       <Button size="medium" type="outlined" text="medium" />
@@ -59,8 +50,7 @@ export default function App() {
       
       <PricingTemplate name="Enterprise plan" details="Our most popular plan." price="500,000" features={["Access to all basic features","Basic reporting and analytics","Up to 10 individual users","20GB individual data each user","Basic chat and email support"]}
       /> */}
-
-      <NavDesktop/>
+      
     </div>
   );
 }

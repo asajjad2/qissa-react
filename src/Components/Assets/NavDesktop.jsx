@@ -1,13 +1,30 @@
 import "./asset-styles.css";
+import cart from "./images/cart.svg";
+import favourites from "./images/favourites.svg";
+import profile from "./images/profile.svg";
+import logo from "./images/logo.svg"
 
-export default function NavDesktop(props) {
+export default function NavDesktop({navLinks}) {
 
+  const navLinkItems = navLinks.map((navLink)=>{
+    return (
+      <li className="nav-link text-medium-md"> {navLink.dropdown?
+        (<a className="dropdown" href={navLink.itemLink}> 
+            {navLink.itemName} 
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#98B3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>):
+        (<a href={navLink.itemLink}>{navLink.itemName}</a>)}  
+      </li>
+    );
+  })
 
   return (
     <div className="nav-desktop">
         <section className="upper">
           <div className="logo-sec">
-            <img src="" alt="logo" />
+            <img src={logo} alt="logo" />
             <span className="display-semibold-sm text-dark-blue">Daastan</span>
           </div>
           <div className="search-bar">
@@ -16,12 +33,19 @@ export default function NavDesktop(props) {
             </svg>
             <input type="text" placeholder="Search titles, authors..." />
           </div>
-          <div className="icon-menu"></div>
+          <div className="icon-menu">
+            <img src={cart} alt="cart-icon" />
+            <div className="vr"></div>
+            <img src={favourites} alt="favourites-icon" />
+            <div className="vr"></div>
+            <img src={profile} alt="profile-icon" />
+          </div>
         </section>
         <div className="hr" style={{width:"100%"}}></div>
         <section className="lower">
-          
-
+          <ul>
+            {navLinkItems}
+          </ul>
         </section>
     </div>
   );

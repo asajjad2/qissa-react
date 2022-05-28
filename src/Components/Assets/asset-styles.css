@@ -6,6 +6,7 @@
     --black: #1b1d20;
     --offwhite: #e9eef7;
     --gray: #7B7B7B;
+    --darkgray: #345452;
   }
   
   * {
@@ -15,6 +16,11 @@
     font-size: 16px;
     line-height: 20px;
     /* color: var(--black); */
+  }
+
+  a {
+    color: inherit; 
+    text-decoration: inherit; 
   }
 
   .hr{
@@ -646,6 +652,7 @@
     align-items: center;
     height: 70px;
     width: 100%;
+    padding: 0px 200px;
   }
 
   .upper .logo-sec{
@@ -655,7 +662,6 @@
   }
 
   .nav-desktop .lower{
-    background-color: #1b1d20;
     height: 64px;
   }
 
@@ -679,4 +685,33 @@
 
   .search-bar input:focus{
     outline: none;
+  }
+
+  .upper .icon-menu{
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-desktop .lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lower ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  .lower ul .nav-link{
+    color: var(--darkgray);
+  }
+
+  .lower ul .dropdown{
+    display: flex;
+    gap: 8px;
   }
