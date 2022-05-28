@@ -1,7 +1,8 @@
 :root {
     --primaryblue: #4172C6;
     --darkblue: #094977;
-    --lightblue: #E9EEF7;
+    --lightblue: #2862B3;
+    --BGblue: #E9EEF7;
     --white: #fefefe;
     --black: #1b1d20;
     --offwhite: #e9eef7;
@@ -556,7 +557,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--lightblue);
+    background: var(--BGblue);
   }
 
   .subscribe-section > div{
@@ -714,4 +715,41 @@
   .lower ul .dropdown{
     display: flex;
     gap: 8px;
+  }
+
+  .stats-card, .stats-card li{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .stats-card{
+    background-color: var(--lightblue);
+    width:fit-content;
+    padding: 24px 32px;
+    border-radius: 8px;
+  }
+
+  .stats-card li > .info{
+    width: 160px;
+  }
+
+  .stats-card .num{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--white);
+  }
+
+  .stats-card .about{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--white);
+    /* next property to break each word on sperate line */
+    word-spacing: 100vw; 
+  }
+
+  .stats-card .vr{
+    color: var(--white);
   }

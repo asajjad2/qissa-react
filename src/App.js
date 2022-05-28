@@ -1,7 +1,9 @@
 import "./styles.css";
-
+import StatsCard from "./Components/Assets/StatsCard";
 
 export default function App() {
+  
+  let stats = [{numeric:"~10K",about:"Authors"},{numeric:"164",about:"Manuscripts Published"},{numeric:"+1M",about:"Royalities earned"},{numeric:"23.6K",about:"Readers Registered"}]
   let navLinks = [{itemName:"Home",itemlink:""},{itemName:"Bookstore",itemlink:""},{itemName:"Best Selling",itemlink:""},{itemName:"New Arrivals",itemlink:""},{itemName:"Features Books",itemlink:""},{itemName:"Talent",itemlink:""},{itemName:"Pages",itemlink:"",dropdown:true},{itemName:"Contact",itemlink:""}];
   return (
 
@@ -51,6 +53,8 @@ export default function App() {
       <PricingTemplate name="Enterprise plan" details="Our most popular plan." price="500,000" features={["Access to all basic features","Basic reporting and analytics","Up to 10 individual users","20GB individual data each user","Basic chat and email support"]}
       /> */}
       
+
+      <StatsCard stats={stats}/>
     </div>
   );
 }
