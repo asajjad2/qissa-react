@@ -8,10 +8,14 @@ import BlogPost from "./Components/Assets/BlogPost";
 import ServiceCard from "./Components/Assets/ServiceCard";
 import FAQ from "./Components/Assets/FAQ";
 import EventTemplate from "./Components/Assets/EventTemplate";
+import SubscribeSection from "./Components/Assets/SubscribeSection";
+import PricingTemplate from "./Components/Assets/PricingTemplate";
+import NavDesktop from "./Components/Assets/NavDesktop";
+
 export default function App() {
   return (
     <div className="App">
-      <Button size="x-lg" type="default" text="Button" />
+      {/* <Button size="x-lg" type="default" text="Button" />
       <Button size="medium" type="outlined" text="medium" />
       <Button size="medium" type="" text="medium" />
       <Button size="wide" type="default" text="Add to Cart" />
@@ -51,6 +55,12 @@ export default function App() {
         date={new Date()}
         details="Nam bibendum ex lacinia elit consequat Nam bibendum ex lacinia elit consequat"
       />
+      <SubscribeSection heading="Subscribe to Daastan's Publish-o-Pedia" subheading="Get the latest and hottest publishing buzz in your buzz every month. Free of cost."/>
+      
+      <PricingTemplate name="Enterprise plan" details="Our most popular plan." price="500,000" features={["Access to all basic features","Basic reporting and analytics","Up to 10 individual users","20GB individual data each user","Basic chat and email support"]}
+      /> */}
+
+      <NavDesktop/>
     </div>
   );
 }
