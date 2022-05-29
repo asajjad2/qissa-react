@@ -1,8 +1,8 @@
-export default function LearnMoreBtn({ url }) {
+export default function LearnMoreTag({ url, text }) {
   return (
     <div>
-      <a href={url} className="learn-more">
-        <h4>Learn More</h4>
+      <a href={url?url:"#"} className="learn-more">
+        <h4>{text}</h4>
         <svg
           width="20"
           height="20"

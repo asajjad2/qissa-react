@@ -26,7 +26,7 @@ export default function EventTemplate({
 
   return (
     <div className="event-template">
-      <div className="rect-bar"></div>
+      <div className="vr"></div>
       <section>
         <div className="content">
           <div className="date">
@@ -39,8 +39,8 @@ export default function EventTemplate({
           </div>
           <img src={imageLink} alt="" />
           <div className="text">
-            <h3>{name}</h3>
-            <p>{details}</p>
+            <h3 className="text-semibold-xl">{name}</h3>
+            <p className="text-normal-md">{details}</p>
           </div>
         </div>
       </section>

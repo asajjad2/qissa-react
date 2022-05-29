@@ -4,7 +4,9 @@ import Button from "./Assets/Button";
 import ServiceCard from "./Assets/ServiceCard";
 import BlogPost from "./Assets/BlogPost";
 import FAQ from "./Assets/FAQ";
-import Column from "./Assets/Column"
+import Column from "./Assets/Column";
+import EventTemplate from "./Assets/EventTemplate";
+import LearnMoreTag from "./Assets/LearnMoreTag";
 
 import "./HomePage.css";
 import printer from "./Assets/images/printer.svg";
@@ -116,12 +118,41 @@ export default function HomePage() {
         </section>
 
         <section className="yt">
-          <div className="text text-medium-md text gray">Didn’t find what you were looking for? Check out 500 most frequently asked questions related to book publishing in this playlist on our <span className="text-dark-blue" onClick={`window.location=#;`}>Youtube channel</span>.</div>
+          <div className="text text-medium-md text gray">Didn’t find what you were looking for? Check out 500 most frequently asked <br /> questions related to book publishing in this playlist on our <span className="text-dark-blue" onClick={`window.location=#;`}>Youtube channel</span>.</div>
           <div className="cols">
             <Column width="232px" height="390px"/>
             <Column width="232px" height="390px"/>
             <Column width="232px" height="390px"/>
             <Column width="232px" height="390px"/>
+          </div>
+        </section>
+
+        <section className="events">
+          <div className="headings">
+            <h2 className="display-semibold-md">Upcoming Events</h2>
+            <p className="text-medium-md text-gray">Nullam at feugiat lectus. Nunc tempus nulla non eros iaculis, varius sollicitudin  <br /> turpis ultrices. Pellentesque faucibus nec ex non consequat.</p>
+          </div>
+          <div className="event-posts">
+            <EventTemplate
+              name="Nam bibendum ex lacinia elit consequat"
+              date={new Date()}
+              details="Nam bibendum ex lacinia elit consequat Nam bibendum ex lacinia elit consequat"
+            />
+            <hr />
+            <EventTemplate
+              name="Nam bibendum ex lacinia elit consequat"
+              date={new Date()}
+              details="Nam bibendum ex lacinia elit consequat Nam bibendum ex lacinia elit consequat"
+            />
+            <hr />
+            <EventTemplate
+              name="Nam bibendum ex lacinia elit consequat"
+              date={new Date()}
+              details="Nam bibendum ex lacinia elit consequat Nam bibendum ex lacinia elit consequat"
+            />
+          </div>
+          <div className="centered">
+            <LearnMoreTag text="View All Events" />
           </div>
         </section>
 

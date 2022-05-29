@@ -11,7 +11,7 @@ export default function ServiceCard({ imageLink, name, details, url }) {
           <p className="details text-normal-lg text-gray">{details}</p>
         </div>
       </div>
-      <LearnMoreTag url={url} />
+      <LearnMoreTag url={url} text="Learn More" />
     </div>
   );
 }

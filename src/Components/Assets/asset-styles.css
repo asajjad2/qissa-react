@@ -444,7 +444,7 @@
     margin-bottom: 16px;
   }
   
-  .service-card .learn-more {
+  .learn-more {
     display: flex;
     gap: 8px;
     cursor: pointer;
@@ -519,7 +519,8 @@
 
   .event-template{
     display: flex;
-    /* gap: 99px; */
+    align-items: center;
+    gap: 24px;
   }
 
   .event-template section{
@@ -527,15 +528,14 @@
     margin-right: 99px;
   }
 
-  .event-template .rect-bar{
-    height: inherit;
+  .event-template .vr{
     width: 4px;
     background-color: var(--darkblue);
-    margin-right: 24px;
   }
 
   .event-template section .content{
     display: flex;
+    align-items: center;
     gap: 17px;
   }
 
