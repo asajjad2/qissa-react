@@ -7,6 +7,8 @@ import FAQ from "./Assets/FAQ";
 import Column from "./Assets/Column";
 import EventTemplate from "./Assets/EventTemplate";
 import LearnMoreTag from "./Assets/LearnMoreTag";
+import PricingTemplate from "./Assets/PricingTemplate";
+import SubscribeSection from "./Assets/SubscribeSection";
 
 import "./HomePage.css";
 import printer from "./Assets/images/printer.svg";
@@ -154,6 +156,22 @@ export default function HomePage() {
           <div className="centered">
             <LearnMoreTag text="View All Events" />
           </div>
+        </section>
+
+        <section className="pricing">
+          <div className="headings">
+            <h2 className="display-semibold-md">Your story deserves to be published</h2>
+            <p className="text-medium-md text-gray">This is one book publishing package that you need. Trust Daastan with your <br /> work because we care.</p>
+          </div>
+          <div className="pricing-plans">
+            <PricingTemplate name="Basic plan" details="Our most popular plan." price="500,000" features={["Feature 1","Feature 2","Feature 3","Feature 4","Feature 5"]}/>
+            <PricingTemplate name="Business plan" details="Our most popular plan." price="500,000" features={["Feature 1","Feature 2","Feature 3","Feature 4","Feature 5"]}/>
+            <PricingTemplate name="Enterprise plan" details="Our most popular plan." price="500,000" features={["Feature 1","Feature 2","Feature 3","Feature 4","Feature 5"]}/>
+          </div>
+        </section>
+
+        <section className="subscribe">
+        <SubscribeSection heading="Subscribe to Daastan's Publish-o-Pedia" subheading="Get the latest and hottest publishing buzz in your buzz every month. Free of cost."/>
         </section>
 
       </main>

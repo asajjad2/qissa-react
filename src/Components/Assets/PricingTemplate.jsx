@@ -18,9 +18,9 @@ export default function PricingTemplate({ name, details, price, features }) {
   return (
     <div className="pricing-template">
       <div className="info">
-          <div className="name text-primary-blue">{name}</div>
+          <div className="name text-semibold-xl text-primary-blue">{name}</div>
           <div className="price display-semibold-md">Rs {price}/m</div>
-          <div className="details text-gray">{details}</div>
+          <div className="details text-normal-md text-gray">{details}</div>
       </div>
       <ul className="features">
         <li>
@@ -28,7 +28,7 @@ export default function PricingTemplate({ name, details, price, features }) {
         </li>
       </ul>
       <div className="footer">
-        <Button type="default" size="wide" text={`Get Started`} width="282px"/>
+        <Button type="default" size="wide" text={`Get Started`} width="282px" height="48px"/>
       </div>
     </div>
   );

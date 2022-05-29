@@ -1,7 +1,7 @@
 import "./asset-styles.css";
 import Button from "./Button";
 
-export default function SubscribeSection({ heading, subheading, details }) {
+export default function SubscribeSection({ heading, subheading}) {
   return (
     <div className="subscribe-section">
       <div>

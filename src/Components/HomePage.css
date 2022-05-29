@@ -99,7 +99,7 @@ header{
 }
 
 .get-published{
-    width: 46.6em;
+    max-width: 46.6em;
     margin: 0 auto;
     text-align: center;
 }         
@@ -153,18 +153,22 @@ main{
      margin: 0 auto;
  }
 
- main .blog{
+ main .blog, main .pricing{
     max-width: 65em;
     margin: 0 auto;
  }
 
- main .blog .headings,main .FAQs .headings,main .events .headings{
+ main .blog .headings,main .FAQs .headings,main .events .headings,main .pricing .headings{
    display: flex;
    flex-direction: column;
    gap: 32px;
    margin-bottom: 40px;
    text-align: center;
  }
+
+  main .pricing .headings{
+    margin-bottom: 60px;
+  }
 
  main .blog .blog-posts{
   display: grid;
@@ -212,6 +216,12 @@ main .events .event-posts{
   grid-template-columns: 1fr;
   grid-row-gap: 16px;
   padding-bottom: 40px;
+}
+
+main .pricing .pricing-plans{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 32px;
 }
 
 

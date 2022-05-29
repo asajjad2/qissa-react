@@ -41,12 +41,12 @@ export default function App() {
         imageLink="https://via.placeholder.com/300x220"
         heading="Praesent euismod consequat fringilla"
         details="Sed at semper lorem. Vivamus consequat, nulla eu finibus venenatis, purus nisi pellentesque sapien, sed molestie justo eros eget odio. Aliquam erat volutpat."
-      /> */}
+      />
       <ServiceCard
         name="Service Name"
         details="Proin eu ornare mauris. Vestibulum eleifend sodales nisl nec sodales."
       />
-      {/* <FAQ
+      <FAQ
         question="This is a sample question to be used in the FAQ"
         answer="Nunc fermentum venenatis sem at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean pretium, mauris scelerisque sollicitudin congue, dolor nunc ultricies ex, nec congue magna dolor ut sem. Pellentesque nulla ligula, viverra consequat metus a, pharetra bibendum tortor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil iusto enim rem debitis temporibus hic ad voluptatibus in sapiente.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil iusto enim rem debitis temporibus hic ad voluptatibus in sapiente.
@@ -61,8 +61,8 @@ export default function App() {
       <SubscribeSection heading="Subscribe to Daastan's Publish-o-Pedia" subheading="Get the latest and hottest publishing buzz in your buzz every month. Free of cost."/>
       
       <PricingTemplate name="Enterprise plan" details="Our most popular plan." price="500,000" features={["Access to all basic features","Basic reporting and analytics","Up to 10 individual users","20GB individual data each user","Basic chat and email support"]}
-      />
-       */}
+      /> */}
+      
 
       <HomePage/>
     </div>
