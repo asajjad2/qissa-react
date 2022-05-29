@@ -65,6 +65,11 @@
     background: var(--darkblue);
     color: var(--white);
   }
+
+  button.secondary{
+    background: #f5f8ff;
+    color: var(--darkblue);
+  }
   
   .button.outlined {
     border: 1px solid var(--black);
@@ -644,6 +649,7 @@
   .nav-desktop{
     width: 100%;
     height: 134px;
+    background-color: var(--white);
   }
 
   .nav-desktop .upper{
@@ -704,12 +710,19 @@
     align-items: center;
     gap: 16px;
     text-transform: capitalize;
-    cursor: pointer;
     margin-bottom: 0px;
   }
 
   .lower ul .nav-link{
     color: var(--darkgray);
+  }
+
+  .lower ul a{
+    cursor: pointer;
+  }
+
+  .lower ul a:hover{
+    color: var(--lightblue);
   }
 
   .lower ul .dropdown{
