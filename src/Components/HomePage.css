@@ -89,6 +89,17 @@
     color: var(--darkblue);
   }
 
+  .home-page{
+    position: relative;
+  }
+
+  .home-page .statistics-card{
+    position: absolute;
+    left: 50%;
+    margin-left: -472px;
+    top: 100vh
+  }
+
 header{
     
     background: url("./Assets/images/header-bg.png") ;

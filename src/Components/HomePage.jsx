@@ -9,6 +9,7 @@ import EventTemplate from "./Assets/EventTemplate";
 import LearnMoreTag from "./Assets/LearnMoreTag";
 import PricingTemplate from "./Assets/PricingTemplate";
 import SubscribeSection from "./Assets/SubscribeSection";
+import StatsCard from "./Assets/StatsCard";
 
 import "./HomePage.css";
 import printer from "./Assets/images/printer.svg";
@@ -18,9 +19,16 @@ import translate from "./Assets/images/translate.svg";
 
 
 export default function HomePage() {  
+
+  let stats = [{numeric:"~10K",about:"Authors"},{numeric:"164",about:"Manuscripts Published"},{numeric:"+1M",about:"Royalities earned"},{numeric:"23.6K",about:"Readers Registered"}]
   let navLinks = [{itemName:"Home",itemlink:""},{itemName:"Bookstore",itemlink:""},{itemName:"Best Selling",itemlink:""},{itemName:"New Arrivals",itemlink:""},{itemName:"Features Books",itemlink:""},{itemName:"Talent",itemlink:""},{itemName:"Pages",itemlink:"",dropdown:true},{itemName:"Contact",itemlink:""}];
+
   return (
     <div className="home-page">
+
+      <div className="statistics-card">
+        <StatsCard stats={stats}/>  
+      </div>
 
 
       <header>
