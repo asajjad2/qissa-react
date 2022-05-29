@@ -7,7 +7,7 @@ export default function Button(props) {
     <div
       onClick={`window.location=${props.url};`}
       className={`button text-medium-sm ${props.size} ${props.type}`}
-      style={props.width?{width:props.width}:null}
+      style={props.width?{width:props.width}:null || props.radius?{borderRadius:props.radius}:null}
     >
       {props.text}
     </div>
