@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/qissa-react/static/css/main.f276667d.css",
+    "main.js": "/qissa-react/static/js/main.186f48d5.js",
+    "static/media/header-bg.png": "/qissa-react/static/media/header-bg.887a6c08c19d71996394.png",
+    "static/media/logo.svg": "/qissa-react/static/media/logo.f2f19980c834eef7b16bf4c829f0dd65.svg",
+    "static/media/graphic-design.svg": "/qissa-react/static/media/graphic-design.88d15c7b67143a9459e81bbe1fe76e83.svg",
+    "static/media/translate.svg": "/qissa-react/static/media/translate.b4a2d167c821d5429815d24589dbb412.svg",
+    "static/media/printer.svg": "/qissa-react/static/media/printer.ab0160ef121686485c9c06f5ef401c10.svg",
+    "static/media/pen.svg": "/qissa-react/static/media/pen.83ee08e0e228ab4e0b9f56f54794554c.svg",
+    "static/media/cart.svg": "/qissa-react/static/media/cart.713448034c506db2679bee17b3f7fe7d.svg",
+    "index.html": "/qissa-react/index.html",
+    "static/media/favourites.svg": "/qissa-react/static/media/favourites.95a59bf396c39d4293a0bbcd92f40036.svg",
+    "static/media/profile.svg": "/qissa-react/static/media/profile.be40e392fd045d1d3f21c9b337112f77.svg",
+    "main.f276667d.css.map": "/qissa-react/static/css/main.f276667d.css.map",
+    "main.186f48d5.js.map": "/qissa-react/static/js/main.186f48d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f276667d.css",
+    "static/js/main.186f48d5.js"
+  ]
+}
