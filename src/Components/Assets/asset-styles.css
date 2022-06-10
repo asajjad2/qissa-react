@@ -783,3 +783,34 @@
   .rect-column{
     background-color: var(--gray);
   }
+
+  .top-strip{
+    width: 100vw;
+    background-color: var(--darkblue);
+    color: var(--BGblue);
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-strip > a{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .bread-crumbs,.bread-crumbs .path-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--primaryblue);
+  }
+
+  .slideshow{
+    margin: 0 auto;
+    background-color: #c4c4c4;
+    height: 17.5em;
+    border-radius: 4px;
+  }

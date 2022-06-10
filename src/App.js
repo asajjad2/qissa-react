@@ -11,6 +11,8 @@ import TagBtn from "./Components/Assets/TagBtn";
 import EventTemplate from "./Components/Assets/EventTemplate";
 import SubscribeSection from "./Components/Assets/SubscribeSection";
 import PricingTemplate from "./Components/Assets/PricingTemplate";
+import TopStrip from "./Components/Assets/TopStrip";
+import BookStore from "./Components/BookStore";
 
 export default function App() {
   
@@ -62,8 +64,9 @@ export default function App() {
       <PricingTemplate name="Enterprise plan" details="Our most popular plan." price="500,000" features={["Access to all basic features","Basic reporting and analytics","Up to 10 individual users","20GB individual data each user","Basic chat and email support"]}
       /> */}
       
-
-      <HomePage/>
+      {/* <TopStrip text="Check out our most recent publications"/> */}
+      {/* <HomePage/> */}
+      <BookStore/>
     </div>
   );
 }

@@ -11,17 +11,17 @@ import PricingTemplate from "./Assets/PricingTemplate";
 import SubscribeSection from "./Assets/SubscribeSection";
 import StatsCard from "./Assets/StatsCard";
 
-import "./HomePage.css";
+import "./HomePage.scss";
+
 import printer from "./Assets/images/printer.svg";
 import pen from "./Assets/images/pen.svg";
 import graphicdesign from "./Assets/images/graphic-design.svg";
 import translate from "./Assets/images/translate.svg";
-
+import navLinks from "./Data/NavLinks";
+import stats from "./Data/Stats";
 
 export default function HomePage() {  
 
-  let stats = [{numeric:"~10K",about:"Authors"},{numeric:"164",about:"Manuscripts Published"},{numeric:"+1M",about:"Royalities earned"},{numeric:"23.6K",about:"Readers Registered"}]
-  let navLinks = [{itemName:"Home",itemlink:""},{itemName:"Bookstore",itemlink:""},{itemName:"Best Selling",itemlink:""},{itemName:"New Arrivals",itemlink:""},{itemName:"Features Books",itemlink:""},{itemName:"Talent",itemlink:""},{itemName:"Pages",itemlink:"",dropdown:true},{itemName:"Contact",itemlink:""}];
 
   return (
     <div className="home-page">
@@ -36,8 +36,8 @@ export default function HomePage() {
         <NavDesktop navLinks={navLinks}/>
         <div className="get-published">
           <div className="text">
-            <div className="heading display-semibold-lg text-dark-blue">Publish Locally, Sell Globally!</div>
-            <div className="sub-heading text-medium-xl">Experience the hassle-free book publishing from the comfort of <br /> your home or explore fresh local literature.</div>
+            <div className="heading display-lg semibold text-dark-blue">Publish Locally, Sell Globally!</div>
+            <div className="sub-heading text-xl medium">Experience the hassle-free book publishing from the comfort of <br /> your home or explore fresh local literature.</div>
           </div>
           <div className="buttons">
             <Button text="Get Published" size="x-lg" type="default"/>
@@ -51,8 +51,8 @@ export default function HomePage() {
       <main>
 
         <section className="about">
-          <div className="display-semibold-md text-dark-blue">Daastan is a one stop shop for all publishing needs</div>
-          <div className="display-medium-xs text-gray">Experience hassle-free customized book publishing solutions from the comfort of your home.</div>
+          <div className="display-md semibold text-dark-blue">Daastan is a one stop shop for all publishing needs</div>
+          <div className="display-xs medium text-gray">Experience hassle-free customized book publishing solutions from the comfort of your home.</div>
         </section>
 
         <section className="service-cards">
@@ -83,8 +83,8 @@ export default function HomePage() {
 
         <section className="blog">
           <div className="headings">
-            <h2 className="display-semibold-md">Our Stories</h2>
-            <p className="text-medium-md text-gray">Read how Daastan has turned dreams to reality for authors of all ages.</p>
+            <h2 className="display-md semibold">Our Stories</h2>
+            <p className="text-md medium text-gray">Read how Daastan has turned dreams to reality for authors of all ages.</p>
           </div>
 
           <div className="blog-posts">
@@ -103,8 +103,8 @@ export default function HomePage() {
 
         <section className="FAQs">
           <div className="headings">
-            <h2 className="display-semibold-md">Frequently Asked Questions</h2>
-            <p className="text-medium-md text-gray">Questions which every author asks</p>
+            <h2 className="display-md semibold">Frequently Asked Questions</h2>
+            <p className="text-md medium text-gray">Questions which every author asks</p>
           </div>
 
           <div className="FAQ-posts">
@@ -128,7 +128,7 @@ export default function HomePage() {
         </section>
 
         <section className="yt">
-          <div className="text text-medium-md text gray">Didn’t find what you were looking for? Check out 500 most frequently asked <br /> questions related to book publishing in this playlist on our <span className="text-dark-blue" onClick={`window.location=#;`}>Youtube channel</span>.</div>
+          <div className="text text-md medium text gray">Didn’t find what you were looking for? Check out 500 most frequently asked <br /> questions related to book publishing in this playlist on our <span className="text-dark-blue" onClick={`window.location=#;`}>Youtube channel</span>.</div>
           <div className="cols">
             <Column width="232px" height="390px"/>
             <Column width="232px" height="390px"/>
@@ -139,8 +139,8 @@ export default function HomePage() {
 
         <section className="events">
           <div className="headings">
-            <h2 className="display-semibold-md">Upcoming Events</h2>
-            <p className="text-medium-md text-gray">Nullam at feugiat lectus. Nunc tempus nulla non eros iaculis, varius sollicitudin  <br /> turpis ultrices. Pellentesque faucibus nec ex non consequat.</p>
+            <h2 className="display-md semibold">Upcoming Events</h2>
+            <p className="text-md medium text-gray">Nullam at feugiat lectus. Nunc tempus nulla non eros iaculis, varius sollicitudin  <br /> turpis ultrices. Pellentesque faucibus nec ex non consequat.</p>
           </div>
           <div className="event-posts">
             <EventTemplate
@@ -168,8 +168,8 @@ export default function HomePage() {
 
         <section className="pricing">
           <div className="headings">
-            <h2 className="display-semibold-md">Your story deserves to be published</h2>
-            <p className="text-medium-md text-gray">This is one book publishing package that you need. Trust Daastan with your <br /> work because we care.</p>
+            <h2 className="display-md semibold">Your story deserves to be published</h2>
+            <p className="text-md medium text-gray">This is one book publishing package that you need. Trust Daastan with your <br /> work because we care.</p>
           </div>
           <div className="pricing-plans">
             <PricingTemplate name="Basic plan" details="Our most popular plan." price="500,000" features={["Feature 1","Feature 2","Feature 3","Feature 4","Feature 5"]}/>
