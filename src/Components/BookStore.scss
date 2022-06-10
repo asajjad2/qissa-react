@@ -79,7 +79,9 @@
   .capitalize{
     text-transform: capitalize;
   }
+
   .book-store{
+
     header{
         display: flex;
         flex-direction: column;
@@ -93,11 +95,58 @@
         align-items: center;
         gap: 5em;
 
+        .features{
+          padding: 0 1.5em;
+          max-width: 51.25em;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 38px;
+
+          .ft{
+            display: flex;
+            gap: 32px;
+          }
+
+        }
+
+        .blog{
+
+          max-width: 65em;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          text-align: center;
+
+          .blog-posts{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 25px;
+            text-align: left;
+          }
+        }
+
         .subscribe{
             width: 100%;
         }
 
-        .best-selling,.urdu-books,.ebooks{
+        .featured-books{
+
+          div{
+            margin: 0 auto;
+          }
+
+          .featured{
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 1fr 1fr;
+          }
+
+        }
+
+        .best-selling,.urdu-books,.ebooks,.explore-genre,.featured-books{
 
             width: 65em;
             margin: 0 auto;
@@ -118,10 +167,30 @@
               justify-content: space-between;
             }
 
+            .genres{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0px;
+              gap: 40px;
+
+              img{
+                cursor: pointer;
+              }
+
+              .genreImg{
+                background: #C4C4C4;
+                border-radius: 2px;
+                width: 100px;
+                height: 100px;
+              }
+
+            }
+
         }
 
         .shop-next-book{
-          width: 65em;
+          max-width: 65em;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
@@ -155,14 +224,12 @@
           }
         }
 
-        .explore-genre{
-          max-width: 51.25em;
+        .CTAs{
+          max-width: 65em;
           margin: 0 auto;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 38px;
+          display: grid;
+          grid-gap: 30px;
+          grid-template-columns: 1fr 1fr;
         }
-
     }
   }

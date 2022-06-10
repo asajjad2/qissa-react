@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primaryblue: #4172C6;
+  --darkblue: #094977;
+  --lightblue: #2862B3;
+  --BGblue: #E9EEF7;
+  --white: #fefefe;
+  --black: #1b1d20;
+  --offwhite: #e9eef7;
+  --gray: #7B7B7B;
+  --darkgray: #345452;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.display-xs {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.display-sm {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.display-md {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+}
+
+.display-lg {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+}
+
+.text-xl {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-md {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-xs {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.ml200 {
+  margin: 0 11.5vw;
+}
+
+.center-h {
+  margin: 0 auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.book-store header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.book-store main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5em;
+}
+
+.book-store main .blog {
+  max-width: 65em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.book-store main .blog .blog-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  text-align: left;
+}
+
+.book-store main .subscribe {
+  width: 100%;
+}
+
+.book-store main .best-selling, .book-store main .urdu-books, .book-store main .ebooks {
+  max-width: 65em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.book-store main .best-selling .heading, .book-store main .urdu-books .heading, .book-store main .ebooks .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 32px;
+}
+
+.book-store main .best-selling .cards, .book-store main .urdu-books .cards, .book-store main .ebooks .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-store main .shop-next-book {
+  max-width: 65em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.book-store main .shop-next-book div .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.book-store main .shop-next-book div .heading .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.book-store main .shop-next-book div .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-store main .explore-genre {
+  max-width: 51.25em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 38px;
+}
+/*# sourceMappingURL=BookStore.css.map */

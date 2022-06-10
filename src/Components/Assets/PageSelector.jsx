@@ -24,14 +24,14 @@ export default function PageSelector(props) {
   }
   function handleNextClick() {
     setActivePageNum((currentPgNum) => {
-      console.log(props.totalPages);
+      // console.log(props.totalPages);
       if (currentPgNum === Number(props.totalPages)) return currentPgNum;
       else return currentPgNum + 1;
     });
   }
 
   const PgNumButtons = numArray.map((index) => {
-    console.log(activePageNum === index + 1);
+    // console.log(activePageNum === index + 1);
     return (
       <div
         className={`pg-num ${activePageNum === index + 1 ? "active" : "m"}`}
@@ -46,7 +46,7 @@ export default function PageSelector(props) {
   });
 
   const SliderButtons = numArray.map((index) => {
-    console.log(activePageNum === index + 1);
+    // console.log(activePageNum === index + 1);
     return (
       <div
         className={` ${
