@@ -72,6 +72,13 @@
   .ml200{
     margin: 0 11.5vw;
   }
+
+  .center-h{
+    margin: 0 auto;
+  }
+  .capitalize{
+    text-transform: capitalize;
+  }
   .book-store{
     header{
         display: flex;
@@ -90,7 +97,7 @@
             width: 100%;
         }
 
-        .best-selling{
+        .best-selling,.urdu-books,.ebooks{
 
             width: 65em;
             margin: 0 auto;
@@ -111,6 +118,50 @@
               justify-content: space-between;
             }
 
+        }
+
+        .shop-next-book{
+          width: 65em;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+
+          div{
+            
+
+            .heading{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 32px;
+              margin-bottom: 40px;
+
+          
+              .btn-group{
+                display: flex;
+                gap: 24px;
+              }
+
+            }
+
+
+            .cards{
+              display: flex;
+              gap: 32px;
+              justify-content: space-between;
+            }
+          }
+        }
+
+        .explore-genre{
+          max-width: 51.25em;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 38px;
         }
 
     }

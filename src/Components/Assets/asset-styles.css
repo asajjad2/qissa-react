@@ -207,9 +207,10 @@
   }
   
   .tag-btn {
-    width: 117px;
-    height: 36px;
+    width: 155px;
+    height: 40px;
     border-radius: 36px;
+    cursor: pointer;
   }
   
   .tag-btn.default {
