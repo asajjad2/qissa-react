@@ -18,9 +18,9 @@ export default function PricingTemplate({ name, details, price, features }) {
   return (
     <div className="pricing-template">
       <div className="info">
-          <div className="name text-semibold-xl text-primary-blue">{name}</div>
-          <div className="price display-semibold-md">Rs {price}/m</div>
-          <div className="details text-normal-md text-gray">{details}</div>
+          <div className="name text-xl semibold text-primary-blue">{name}</div>
+          <div className="price display-md semibold">Rs {price}/m</div>
+          <div className="details text-md normal text-gray">{details}</div>
       </div>
       <ul className="features">
         <li>

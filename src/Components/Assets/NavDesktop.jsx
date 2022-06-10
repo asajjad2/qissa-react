@@ -8,7 +8,7 @@ export default function NavDesktop({navLinks}) {
 
   const navLinkItems = navLinks.map((navLink)=>{
     return (
-      <li className="nav-link text-medium-md"> {navLink.dropdown?
+      <li className="nav-link text-md medium"> {navLink.dropdown?
         (<a className="dropdown" href={navLink.itemLink}> 
             {navLink.itemName} 
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ export default function NavDesktop({navLinks}) {
         <section className="upper">
           <div className="logo-sec">
             <img src={logo} alt="logo" />
-            <span className="display-semibold-sm text-dark-blue">Daastan</span>
+            <span className="text-md semibold text-dark-blue">Daastan</span>
           </div>
           <div className="search-bar">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

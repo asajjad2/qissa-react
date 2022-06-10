@@ -12,7 +12,7 @@ export default function Button(props) {
   return (
     <div
       onClick={`window.location=${props.url};`}
-      className={`button text-medium-sm ${props.size} ${props.type}`}
+      className={`button text-sm medium ${props.size} ${props.type}`}
       style={localStyle}
     >
       {props.text}

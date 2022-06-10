@@ -39,8 +39,8 @@ export default function EventTemplate({
           </div>
           <img src={imageLink} alt="" />
           <div className="text">
-            <h3 className="text-semibold-xl">{name}</h3>
-            <p className="text-normal-md">{details}</p>
+            <h3 className="text-xl semibold">{name}</h3>
+            <p className="text-md normal">{details}</p>
           </div>
         </div>
       </section>

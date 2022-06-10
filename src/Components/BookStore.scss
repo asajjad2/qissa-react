@@ -105,6 +105,12 @@
                 gap: 32px;
             }
 
+            .cards{
+              display: flex;
+              gap: 32px;
+              justify-content: space-between;
+            }
+
         }
 
     }

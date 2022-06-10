@@ -14,7 +14,7 @@ export default function FAQ({ question, answer }) {
   return (
     <div className="FAQ">
       <div
-        className="question gap-16 text-semibold-xl"
+        className="question gap-16 text-xl semibold"
         onClick={collapsed ? handleExpand : handleCollapsed}
       >
         {collapsed ? (
@@ -48,7 +48,7 @@ export default function FAQ({ question, answer }) {
         )}
         <p>{question}</p>
       </div>
-      <div className={`answer text-normal-md text-gray ${collapsed ? "hide" : ""}`}>
+      <div className={`answer text-md normal text-gray ${collapsed ? "hide" : ""}`}>
         <div className="rect"></div>
 
         <p>{answer}</p>

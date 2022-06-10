@@ -4,14 +4,28 @@ import BreadCrumbs from "./Assets/BreadCrumbs";
 import Slideshow from "./Assets/Slideshow";
 import SubscribeSection from "./Assets/SubscribeSection";
 import LearnMoreTag from "./Assets/LearnMoreTag";
+import BookCard from "./Assets/BookCard";
 
 import "./BookStore.scss";
 
 import navLinks from "./Data/NavLinks";
+import { bestSellingBooks, ebooks, urduBooks } from "./Data/Books";
 
 export default function BookStore() {
 
     let pathItems = ["Bookstore"];
+
+    let bestSellingBookItems = bestSellingBooks.map(bsb=>{
+        return(
+            <BookCard bookname={bsb.bookname} authorname={bsb.authorname} genre={bsb.genre} ebook={bsb.ebook}/>
+        );
+    })
+
+    bestSellingBookItems = bestSellingBookItems.filter((bsb,index)=>{
+        return index<5;
+    })
+
+    // console.log(bestSellingBookItems);
 
     return(
         <div className="book-store">
@@ -32,6 +46,9 @@ export default function BookStore() {
                         <div style={{width:"5em"}}></div>
                         <div className="display-sm semibold">Best Selling</div>
                         <LearnMoreTag text="See All"/>
+                    </div>
+                    <div className="cards">
+                        {bestSellingBookItems}
                     </div>
                 </section>
                 <section className="explore-genre"></section>

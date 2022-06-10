@@ -7,7 +7,7 @@ export default function BreadCrumbs({pathItems}){ //array of all directories and
         return (
             <div className="path-item">
                 <img src={rightArr} alt="right-arrow" />
-                <h5 className="text-medium-sm">{pathItem}</h5>
+                <h5 className="text-sm medium">{pathItem}</h5>
             </div>
         );
     })
