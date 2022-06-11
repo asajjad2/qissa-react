@@ -66,7 +66,7 @@ export default function App() {
       
       {/* <TopStrip text="Check out our most recent publications"/> */}
       {/* <HomePage/> */}
-      <BookStore/>
+      {/* <BookStore/> */}
     </div>
   );
 }

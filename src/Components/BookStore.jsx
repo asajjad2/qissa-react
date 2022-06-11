@@ -11,6 +11,7 @@ import BlogPost from "./Assets/BlogPost";
 import FeatureSign from "./Assets/FeatureSign";
 import FeatureBookCard from "./Assets/FeaturedBookCard";
 import CTA from "./Assets/CTA";
+import Footer from "./Assets/Footer";
 
 import "./BookStore.scss";
 
@@ -217,6 +218,10 @@ export default function BookStore() {
 
                 <section className="subscribe">
                     <SubscribeSection heading="Subscribe to Daastan's Publish-o-Pedia" subheading="Get the latest and hottest publishing buzz in your buzz every month. Free of cost."/>
+                </section>
+
+                <section className="footer">
+                    <Footer/>
                 </section>
             </main>
 

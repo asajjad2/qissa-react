@@ -4,5 +4,9 @@
 4. hover animations, carousel research (animation related stuff)
 5.different css files shouldn't interfere
 6. OnClick events - (
-    -> Tag Buttons in Shop your next book
+    Animations-
+        -> Tag Buttons in Shop your next book
+    Routing-
 )
+7.How do I route to different pages? (both local and web links) Do <a href> work or something else?
+8.How to manage common scss?
