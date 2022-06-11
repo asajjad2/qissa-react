@@ -694,7 +694,7 @@
     border: none;
   }
 
-  .search-bar input:focus{
+  input:focus{
     outline: none;
   }
 
@@ -1018,5 +1018,76 @@
 
   .copyright .container .socials{
     display: flex;
-    gap: 24px;
+    gap: 1.5em;
+  }
+
+  .author-subscribe-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 414px;
+    padding: 24px;
+    /* height: 278px; */
+    background: var(--offwhite);
+    border-radius: 8px;
+  }
+
+  .author-subscribe-section > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .author-subscribe-section .text{
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+  .author-subscribe-section .text > h3{
+     margin-bottom: 1em;
+  }
+
+  .author-subscribe-section .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .author-subscribe-section .input input{
+    padding: 12px 14px 12px 16px;
+    border: none;
+    border-radius: 8px;
+    width: 382px;
+  }
+
+  .author-info{
+    width: 1040px;
+    display: flex;
+    gap: 88px;
+  }
+
+  .author-info>img{
+    width: 28.8%;
+    height: inherit;
+  }
+
+  .author-info .text .brief{
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .author-info .details .about{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .author-info .details .links{
+    display: flex;
+    gap: 1em;
   }

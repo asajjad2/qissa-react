@@ -129,105 +129,113 @@
         flex-direction: column;
         gap: 80px;
         margin-top: 198px;
+
+        .about{
+          /* width: 65em; */
+          margin: 0 auto;
+          /* display: flex;
+          gap: 16px; */
+          max-width: 65em;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 16px;
+        }
+
+        .service-cards{
+          margin: 0 auto;
+          max-width: 65em;
+        }
+
+        .service-cards > .cards{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-bottom: 40px;
+        }
+
+        .service-cards > div{
+          margin: 0 auto;
+        }
+
+        .blog,.pricing{
+          max-width: 65em;
+          margin: 0 auto;
+        }
+
+        .blog,.FAQs,.events,.pricing{
+          .headings{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+          }
+        }
+
+        .pricing{
+          .headings{
+            margin-bottom: 60px;
+          }
+        }
+
+        .blog .blog-posts{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column-gap: 25px;
+        }
+
+        .FAQs{
+          max-width: 56.25em;
+          margin: 0 auto;
+
+          .FAQ-posts{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 16px;
+          }
+
+        }
+
+        .yt{
+          max-width: 65em;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          text-align: center;
+
+          .text span{
+            cursor: pointer;
+          }
+
+          .cols{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 40px;
+          }
+
+        }
+
+        .events{
+          max-width: 52.125em;
+          margin: 0 auto;
+
+          .event-posts{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 16px;
+            padding-bottom: 40px;
+          }
+
+        }
+
+        .pricing .pricing-plans{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column-gap: 32px;
+          overflow: hidden;
+        }
     }
-    
-    main .about{
-        /* width: 65em; */
-        margin: 0 auto;
-        /* display: flex;
-        gap: 16px; */
-        max-width: 65em;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 16px;
-    }
-    
-    main .service-cards{
-        margin: 0 auto;
-        max-width: 65em;
-        
-    }
-    
-    main .service-cards > .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-bottom: 40px;
-    }
-    
-    main .service-cards > div{
-        margin: 0 auto;
-    }
-    
-    main .blog, main .pricing{
-        max-width: 65em;
-        margin: 0 auto;
-    }
-    
-    main .blog .headings,main .FAQs .headings,main .events .headings,main .pricing .headings{
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    
-      main .pricing .headings{
-        margin-bottom: 60px;
-      }
-    
-    main .blog .blog-posts{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 25px;
-    }
-    
-    main .FAQs{
-      max-width: 56.25em;
-      margin: 0 auto;
-    }
-    
-    main .FAQs .FAQ-posts{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-row-gap: 16px;
-    }
-    
-    main .yt{
-      max-width: 65em;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      text-align: center;
-    }
-    
-    main .yt .text span{
-      cursor: pointer;
-    }
-    
-    main .yt .cols{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 40px;
-    }
-    
-    main .events{
-      max-width: 52.125em;
-      margin: 0 auto;
-    }
-    
-    main .events .event-posts{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-row-gap: 16px;
-      padding-bottom: 40px;
-    }
-    
-    main .pricing .pricing-plans{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 32px;
-    }
+
     
     
     .centered{

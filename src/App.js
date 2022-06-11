@@ -1,5 +1,4 @@
 import "./styles.css";
-import HomePage from "./Components/HomePage";
 import Button from "./Components/Assets/Button";
 import TeamMemberCard from "./Components/Assets/TeamMemberCard";
 import TestimonialCard from "./Components/Assets/TestimonialCard";
@@ -12,7 +11,9 @@ import EventTemplate from "./Components/Assets/EventTemplate";
 import SubscribeSection from "./Components/Assets/SubscribeSection";
 import PricingTemplate from "./Components/Assets/PricingTemplate";
 import TopStrip from "./Components/Assets/TopStrip";
+import HomePage from "./Components/HomePage";
 import BookStore from "./Components/BookStore";
+import Author from "./Components/Author";
 
 export default function App() {
   
@@ -65,8 +66,9 @@ export default function App() {
       /> */}
       
       {/* <TopStrip text="Check out our most recent publications"/> */}
-      {/* <HomePage/> */}
-      {/* <BookStore/> */}
+      <HomePage/>
+      <BookStore/>
+      <Author authorname={"Dania Khan"}/>
     </div>
   );
 }

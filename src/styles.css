@@ -6,9 +6,9 @@
     align-items: space-evenly;
   } */
   
-  /* .App > * {
-    margin: 10px 0;
-  } */
+  .App > * {
+    margin-bottom: 3em;
+  }
   
   /* body {
     padding: 20px;

@@ -46,13 +46,13 @@ export default function Footer(){
                     <div className="container">
                         <div className="text-md normal">© 2022 Daastan. All rights reserved.</div>
                         <div className="socials">
-                            <a href="">
+                            <a href="#">
                                 <img src={twitter} alt="twitter-icon" />
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <img src={linkedin} alt="linkedin-icon" />
                             </a> 
-                            <a href="">
+                            <a href="#">
                                 <img src={facebook} alt="facebook icon" />
                             </a>
                         </div>

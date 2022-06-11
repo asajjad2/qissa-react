@@ -81,10 +81,39 @@
   }
 
   .author{
-    header{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    // margin-bottom: 3em;
+
+    main{
         display: flex;
         flex-direction: column;
-        gap: 2em;
-        margin-bottom: 3em;
+        align-items: center;
+        gap: 80px;
+
+        .by-author{
+
+            // width: 65em;
+            // margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .heading{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2em;
+            }
+
+            .cards{
+                display: flex;
+                gap: 2em;
+                justify-content: space-between;
+            }
+        }
     }
+    
   }

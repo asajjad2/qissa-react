@@ -1,8 +1,8 @@
 
 export default function LinksColumn({data}){
 
-    let linksList = data.map((dataItem)=>{
-        return (<a href={dataItem.url} className="text-md medium"><li>{dataItem.name}</li> </a>);
+    let linksList = data.map((dataItem,index)=>{
+        return (<a href={dataItem.url} key={index} className="text-md medium"><li>{dataItem.name}</li> </a>);
     })
 
     linksList = linksList.filter((dataItem,index)=>{
