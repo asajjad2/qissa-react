@@ -1,6 +1,5 @@
 import "./styles.css";
 
-import JobPost from "./Components/Assets/JobPost";
 
 import HomePage from "./Components/HomePage";
 import BookStore from "./Components/BookStore";

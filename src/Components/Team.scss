@@ -12,4 +12,20 @@
         flex-direction: column;
         gap: 2em;
     }
+
+    & .btns, & > main{
+        display: flex;
+        gap: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    & > .main-team {
+        margin-top: 6.875em;
+    }
+
+    & > .others-team{
+        margin-top: 5em;
+        margin-bottom: 120px;
+    }
 }

@@ -61,7 +61,7 @@
   }
   
   .button.medium {
-    width: 160px;
+    width: 130px;
     height: 40px;
   }
   
@@ -297,7 +297,7 @@
     position: relative;
   }
   
-  .team-main-card img{
+  .team-main-card > img{
     position: absolute;
     left: 61.25%;
     right: 7.5%;
@@ -323,6 +323,39 @@
     margin-bottom: 24px;
   }
 
+  .team-others-card{
+    width: 20em;
+    background: var(--black);
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    border-radius: 0.5em;
+  }
+
+  .team-others-card > img{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #787a7c;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .team-others-card .info{
+    text-align: center;
+  }
+
+  .team-others-card .info .about{
+    color: #D0DDDC;
+  }
+
+  .team-others-card .info > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
 
   .info .socials, .info .book-meeting{
     display: flex;
@@ -332,7 +365,12 @@
     padding: 0px;
   }
 
-  .info .socials div{
+  .team-others-card .info .socials{
+    justify-content: center;
+    padding-top: 46px;
+  }
+
+  .info .socials img{
     cursor: pointer;
   }
 
