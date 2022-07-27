@@ -940,7 +940,7 @@
     gap: 80px;
   }
 
-  .footer > .logos{
+  .footer-logos > .logos{
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,6 +1,4 @@
-import logoGroup from "./images/logo-group.svg";
-import logo2 from "./images/logo2.svg";
-import logo3 from "./images/logo3.svg";
+
 import logo from "./images/logo.svg";
 import twitter from "./images/twitter.svg";
 import linkedin from "./images/linkedin.svg";
@@ -18,12 +16,6 @@ export default function Footer(){
 
     return(
         <div className="footer">
-
-            <div className="logos">
-                <img src={logoGroup} alt="" />
-                <img src={logo2} alt="" />
-                <img src={logo3} alt="" />
-            </div>
 
             <div className="main">
 

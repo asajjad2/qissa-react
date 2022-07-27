@@ -1,8 +1,10 @@
 
 .careers{
+
     display: flex;
     flex-direction: column;
     gap: 2em;
+   
 
     & > .info,main{
         max-width: 48em;

@@ -10,6 +10,7 @@ import LearnMoreTag from "./Assets/LearnMoreTag";
 import PricingTemplate from "./Assets/PricingTemplate";
 import SubscribeSection from "./Assets/SubscribeSection";
 import StatsCard from "./Assets/StatsCard";
+import FooterLogos from "./Assets/FooterLogos";
 import Footer from "./Assets/Footer";
 
 import "./HomePage.scss";
@@ -183,14 +184,13 @@ export default function HomePage() {
           <SubscribeSection heading="Subscribe to Daastan's Publish-o-Pedia" subheading="Get the latest and hottest publishing buzz in your buzz every month. Free of cost."/>
         </section>
 
-        <section className="footer">
+        <footer>
+          <FooterLogos />
           <Footer/>
-        </section>
+        </footer>
 
       </main>
 
-
-      <footer></footer>
     </div>
   );
 }

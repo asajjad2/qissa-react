@@ -1,0 +1,15 @@
+.team{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    & > .info{
+        max-width: 37.875em;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+}

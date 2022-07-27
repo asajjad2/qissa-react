@@ -6,6 +6,7 @@ import HomePage from "./Components/HomePage";
 import BookStore from "./Components/BookStore";
 import Author from "./Components/Author";
 import Careers from "./Components/Careers";
+import Team from "./Components/Team";
 
 export default function App() {
   
@@ -62,6 +63,7 @@ export default function App() {
       <BookStore/>
       <Author authorname={"Dania Khan"}/>
       <Careers />
+      <Team />
 
     </div>
   );
