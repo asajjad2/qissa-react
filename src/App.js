@@ -1,19 +1,9 @@
 import "./styles.css";
-import Button from "./Components/Assets/Button";
-import TeamMemberCard from "./Components/Assets/TeamMemberCard";
-import TestimonialCard from "./Components/Assets/TestimonialCard";
-import BlogPost from "./Components/Assets/BlogPost";
-import ServiceCard from "./Components/Assets/ServiceCard";
-import FAQ from "./Components/Assets/FAQ";
-import PageSelector from "./Components/Assets/PageSelector";
-import TagBtn from "./Components/Assets/TagBtn";
-import EventTemplate from "./Components/Assets/EventTemplate";
-import SubscribeSection from "./Components/Assets/SubscribeSection";
-import PricingTemplate from "./Components/Assets/PricingTemplate";
-import TopStrip from "./Components/Assets/TopStrip";
+
 import HomePage from "./Components/HomePage";
 import BookStore from "./Components/BookStore";
 import Author from "./Components/Author";
+import Careers from "./Components/Careers";
 
 export default function App() {
   
@@ -69,6 +59,7 @@ export default function App() {
       <HomePage/>
       <BookStore/>
       <Author authorname={"Dania Khan"}/>
+      <Careers />
     </div>
   );
 }

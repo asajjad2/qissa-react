@@ -6,7 +6,6 @@ import AuthorSubscribeSection from "./Assets/AuthorSubscribeSection";
 import AuthorInfo from "./Assets/AuthorInfo";
 
 import "./Author.scss";
-
 import navLinks from "./Data/NavLinks";
 
 import authorImg from "./Assets/images/author-img.png";
@@ -89,9 +88,11 @@ export default function Author({authorname}){
                 <BreadCrumbs  pathItems={pathItems}/>
             </div>
             <main>
+
                 <section className="authorInfo">
                     <AuthorInfo author = {authorInfo}/>
                 </section>
+
                 <section className="by-author">
                     <div className="heading">
                         <div style={{width:"5em"}}></div>
@@ -102,10 +103,13 @@ export default function Author({authorname}){
                         {byAuthorBooksItems}
                     </div>
                 </section>
+
                 <section className="subscribe">
                     <AuthorSubscribeSection/>
                 </section>
+
                 <Footer/>
+                
             </main>
         </div>
     )

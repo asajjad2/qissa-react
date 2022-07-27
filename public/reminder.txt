@@ -10,3 +10,4 @@
 )
 7.How do I route to different pages? (both local and web links) Do <a href> work or something else?
 8.How to manage common scss?
+9.How to handle repetetion of import code e.g. navlinks data
