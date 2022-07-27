@@ -1,5 +1,7 @@
 import "./styles.css";
 
+import JobPost from "./Components/Assets/JobPost";
+
 import HomePage from "./Components/HomePage";
 import BookStore from "./Components/BookStore";
 import Author from "./Components/Author";
@@ -60,6 +62,7 @@ export default function App() {
       <BookStore/>
       <Author authorname={"Dania Khan"}/>
       <Careers />
+
     </div>
   );
 }

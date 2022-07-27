@@ -4,12 +4,28 @@
     flex-direction: column;
     gap: 2em;
 
-    .info{
-        max-width: 37.875em;
+    & > .info,main{
+        max-width: 48em;
         margin: 0 auto;
         text-align: center;
         display: flex;
         flex-direction: column;
         gap: 2em;
+    }
+
+    main{
+        text-align: left;
+        margin-top: 6.375em;
+        margin-bottom: 7.5em;
+    }
+
+    main > div{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    main > div > .hr{
+        width: inherit;
     }
 }

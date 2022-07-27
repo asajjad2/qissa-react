@@ -6,6 +6,7 @@
     --lightblue: #2862B3;
     --bluegray: #363F72;
     --BGblue: #E9EEF7;
+    --blue: #175CD3;
     --white: #fefefe;
     --black: #1b1d20;
     --offwhite: #e9eef7;
@@ -130,6 +131,11 @@
   .text-xl{
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .text-lg{
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .text-md{
@@ -1090,4 +1096,99 @@
   .author-info .details .links{
     display: flex;
     gap: 1em;
+  }
+
+  .job-post{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    min-width: 48em;
+  }
+
+  .job-post .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .job-post .text .title{
+    text-transform: capitalize;
+  }
+
+  .job-post .text > div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .job-post .text > div .type{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 1.5em;
+    padding: 2px 10px 2px 8px;
+    border-radius: 1em;
+    text-transform: capitalize;
+  }
+
+  .job-post .text > div .dot{
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+  }
+
+  .job-post .design{
+    color: var(--blue);
+    background-color: #EFF8FF;
+  }
+
+  .job-post .design .dot{
+    background-color: var(--blue);
+  }
+
+  .job-post .writer{
+    color: #C11574;
+    background-color: #FDF2FA;;
+  }
+
+  .job-post .writer .dot{
+    background-color: #C11574;
+  }
+
+  .job-post .cs{
+    color: #027A48;
+    background-color: #ECFDF3;
+  }
+
+  .job-post .cs .dot{
+    background-color: #027A48;
+  }
+
+  .job-post .sales{
+    color: #3538CD;
+    background-color: #EEF4FF;
+  }
+
+  .job-post .sales .dot{
+    background-color: #3538CD;
+  }
+
+  .job-post .marketing{
+    color: #C4320A;
+    background-color: #FFF6ED;
+  }
+
+  .job-post .marketing .dot{
+    background-color: #C4320A;
+  }
+
+  .job-post .badges{
+    display: flex;
+    gap: 1.5em;
+  }
+  .job-post .badges .bdg{
+    display: flex;
+    gap: 0.5em;
+    text-transform: capitalize;
+    overflow: hidden;
   }
