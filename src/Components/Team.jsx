@@ -50,11 +50,10 @@ export default function Careers(){
             about="Direct descendent of a literary figure disrupting book publishing space in Pakistan for over a decade. He is a globally acclaimed award winning social entrepreneur who loves discovering new cultures, featuring local stories and spending time with cause-based visionaries."
           />
 
-
         </main>
 
         <main className="others-team">
-          
+
           <TeamMemberCard2 name="Syed Ommer Amer"
             title="CEO"
             about="Aenean aliquam odio sed quam commodo"
