@@ -377,6 +377,7 @@
   .info .book-meeting{
     justify-content: center;
     cursor: pointer;
+    margin-bottom: 1.5em;
   }
   
   .info .book-meeting h3{

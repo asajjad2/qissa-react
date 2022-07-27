@@ -1,0 +1,29 @@
+.wish-list{
+
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-bottom: 3em;
+    }
+
+    & > main{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+        margin-bottom: 15.5em;
+    }
+
+    & .books{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 35px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+}
+
