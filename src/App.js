@@ -1,12 +1,11 @@
 import "./styles.css";
 
-
 import HomePage from "./Components/HomePage";
 import BookStore from "./Components/BookStore";
 import Author from "./Components/Author";
 import Careers from "./Components/Careers";
 import Team from "./Components/Team";
-import WishList from "./Components/WishList";
+import SpecialBook from "./Components/SpecialBook";
 
 export default function App() {
   
@@ -59,12 +58,16 @@ export default function App() {
       /> */}
       
       {/* <TopStrip text="Check out our most recent publications"/> */}
+
+
+
       <HomePage/>
       <BookStore/>
       <Author authorname={"Dania Khan"}/>
       <Careers />
       <Team />
-      <WishList />
+      <SpecialBook category={"wishlist"}/>
+      <SpecialBook category={"Bestselling"}/>
 
     </div>
   );

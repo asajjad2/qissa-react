@@ -45,8 +45,7 @@
     display: none;
   }
   
-  .button,
-  .tag-btn {
+  .button.tag-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,11 +57,19 @@
     /* padding: 15px 50px; */
     text-transform: capitalize;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
   }
   
   .button.medium {
     width: 130px;
     height: 40px;
+  }
+
+  .button.sm{
+    height: 20px;
   }
   
   .button.x-lg {
@@ -83,6 +90,10 @@
   .button.outlined {
     border: 1px solid var(--darkblue);
     color: var(--darkblue);
+  }
+
+  .button.borderless{
+    border: none;
   }
 
   .button.wide{
@@ -178,17 +189,9 @@
   }
   
   .page-numbering {
+    width: inherit;
     display: flex;
-    align-items: flex-start;
-    padding: 0px;
-    width: 474px;
-    height: 36px;
-  }
-  
-  .page-numbering > * {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -203,24 +206,44 @@
     /* margin: 0px 32px; */
     cursor: pointer;
   }
+
+  .page-numbering .next{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-numbering .numbers{
+    display: flex;
+  }
   
   .page-numbering .pg-num {  
-    width: 34px;
-    height: 36px;
-    background: var(--offwhite);
-    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
   
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 16px;
+    padding: 12px;
     cursor: pointer;
+
+    color: #668585;
+    background-color: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .page-numbering .pg-num.active,
   .tag-btn.active {
     background-color: var(--darkblue);
     color: var(--white);
+  }
+
+  .page-numbering .pg-num.active{
+    background-color: #F5F8FF;
+    color: #5684D9;
   }
   
   .tag-btn {

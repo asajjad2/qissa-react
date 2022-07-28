@@ -5,17 +5,20 @@ export default function Button(props) {
   let localStyle = {
     width: props.width?props.width:null,
     height: props.height?props.height:null,
-    borderRadius: props.radius?props.radius:null
+    borderRadius: props.radius?props.radius:null,
+    color : props.color?props.color:null
   }
 
 
   return (
     <div
-      onClick={`window.location=${props.url};`}
       className={`button text-sm medium ${props.size} ${props.type}`}
       style={localStyle}
+      onClick = {props.onClick}
     >
+      {props.leading?(<img src={props.leading} alt={"leading icon"}/>):null}
       {props.text}
+      {props.trailing?(<img src={props.trailing} alt={"trailing icon"}/>):null}
     </div>
   );
 }

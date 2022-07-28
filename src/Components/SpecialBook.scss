@@ -12,6 +12,10 @@
         flex-direction: column;
         gap: 2.5em;
         margin-bottom: 15.5em;
+
+        & h2{
+            text-transform: capitalize;
+        }
     }
 
     & .books{
@@ -19,6 +23,14 @@
         grid-template-columns: repeat(5,1fr);
         grid-gap: 35px;
     }
+
+    & .pagination{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
+
+
 
     footer{
         display: flex;

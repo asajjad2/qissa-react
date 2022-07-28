@@ -1,15 +1,20 @@
-import { useState } from "react";
+// import { useState, useEffect, useCallback } from "react";
+import Button from "./Button";
 
-export default function PageSelector(props) {
+import prev from "./images/prev.svg";
+import next from "./images/next.svg";
+// import { act } from "react-dom/test-utils";
+
+export default function PageSelector({totalPages,type,activePageNum,setActivePageNum}) {
   let numArray = [];
-  for (let i = 0; i < props.totalPages; i++) {
+  for (let i = 0; i < totalPages; i++) {
     numArray.push(i);
   }
 
-  const [activePageNum, setActivePageNum] = useState(1);
-
   function handleNumClick(event) {
+
     setActivePageNum(Number(event.target.innerHTML));
+
   }
 
   function handleSliderBtnClick(event) {
@@ -17,19 +22,34 @@ export default function PageSelector(props) {
   }
 
   function handlePrevClick() {
+
     setActivePageNum((currentPgNum) => {
       if (currentPgNum === 1) return currentPgNum;
       else return currentPgNum - 1;
     });
-  }
-  function handleNextClick() {
-    setActivePageNum((currentPgNum) => {
-      // console.log(props.totalPages);
-      if (currentPgNum === Number(props.totalPages)) return currentPgNum;
-      else return currentPgNum + 1;
-    });
+
   }
 
+  function handleNextClick() {
+
+    setActivePageNum((currentPgNum) => {
+      // console.log(props.totalPages);
+      if (currentPgNum === Number(totalPages)) return currentPgNum;
+      else return currentPgNum + 1;
+    });
+
+  }
+
+  // const handleClick = useCallback(() => {
+  //   return props.handleClick;
+  // }, []);
+
+  // useEffect(() => {
+  //   handleClick(activePageNum);
+    
+  // }, [activePageNum]);
+
+  
   const PgNumButtons = numArray.map((index) => {
     // console.log(activePageNum === index + 1);
     return (
@@ -59,10 +79,9 @@ export default function PageSelector(props) {
   });
 
   //builds a page selector based on the "type" prop
-
   return (
     <div className="page-selector">
-      {props.type === "slider" ? (
+      {type === "slider" ? (
         <div className="slider">
           <div className="prev" onClick={handlePrevClick}>
             <svg
@@ -96,15 +115,13 @@ export default function PageSelector(props) {
             </svg>
           </div>
         </div>
-      ) : props.type === "numbering" ? (
+      ) : type === "numbering" ? (
         <div className="page-numbering">
-          <div className="prev" onClick={handlePrevClick}>
-            Previous
+          <Button size="sm" type="borderless" text="Previous" leading={prev} onClick={handlePrevClick} color={"#668585"}/>
+          <div className="numbers">
+            {PgNumButtons}
           </div>
-          {PgNumButtons}
-          <div className="next" onClick={handleNextClick}>
-            Next
-          </div>
+          <Button size={"sm"} type={"borderless"} text={"Next"} trailing={next} onClick={handleNextClick} color={"#668585"}/>
         </div>
       ) : (
         ""
