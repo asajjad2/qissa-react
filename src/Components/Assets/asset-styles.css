@@ -247,7 +247,7 @@
   }
   
   .tag-btn {
-    width: 155px;
+    padding: 8px 24px;
     height: 40px;
     border-radius: 36px;
     cursor: pointer;

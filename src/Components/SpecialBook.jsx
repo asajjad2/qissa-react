@@ -21,15 +21,11 @@ export default function WishList({category}){
 
     let totalPages = listData.length/25;
 
-    // console.log("total books - ");
-    // console.log(listData.length);
     totalPages = Math.ceil(totalPages);
 
     const [currentBooks,setCurrentBooks] = useState(listData.slice(0,25));
     const [activePageNum, setActivePageNum] = useState(1);
 
-    // console.log("total pages - ");
-    // console.log(totalPages);
 
     for(let i=1;i<4;i++){
 
@@ -39,13 +35,13 @@ export default function WishList({category}){
             let Books = listData.filter(function(currentValue, index, arr){
                 return (index>=((i-1)*25)&&index<(((i-1)*25)+25))
             });
-            console.log(Books);
+            // console.log(Books);
             // setCurrentBooks(listData.slice(Books,25));
         } else {
             let Books = listData.filter(function(currentValue, index, arr){
                 return (index>=((i-1)*25)&&index<(((i-1)*25)+lastBooksRemaining))
             });
-            console.log(Books);
+            // console.log(Books);
             // setCurrentBooks(lastBooks);
         }
     }

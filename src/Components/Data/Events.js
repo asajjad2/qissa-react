@@ -1,0 +1,75 @@
+let events = [
+    {
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "book-launch",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "book-launch",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "book-launch",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "book-launch",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "book-launch",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "competetion",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "competetion",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "competetion",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "competetion",
+    },{
+        name : "Nam bibendum ex lacinia elit consequat",
+        date : new Date("2021-01-01"),
+        details : "Nam bibendum ex lacinia elit consequat nam bibendum ex lacinia elit consequat",
+        imageLink : "",
+        btnLink : "",
+        type: "competetion",
+    },
+];
+
+export default events;

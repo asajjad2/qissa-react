@@ -6,6 +6,7 @@ import Author from "./Components/Author";
 import Careers from "./Components/Careers";
 import Team from "./Components/Team";
 import SpecialBook from "./Components/SpecialBook";
+import Events from "./Components/Events";
 
 export default function App() {
   
@@ -68,6 +69,7 @@ export default function App() {
       <Team />
       <SpecialBook category={"wishlist"}/>
       <SpecialBook category={"Bestselling"}/>
+      <Events />
 
     </div>
   );
