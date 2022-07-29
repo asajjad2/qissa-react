@@ -8,6 +8,7 @@ import Team from "./Components/Team";
 import SpecialBook from "./Components/SpecialBook";
 import Events from "./Components/Events";
 import EmailVerification from "./Components/EmailVerification";
+import ForgotPassword from "./Components/ForgotPassword";
 
 export default function App() {
   
@@ -72,6 +73,7 @@ export default function App() {
       <SpecialBook category={"Bestselling"}/>
       <Events />
       <EmailVerification email={"olivia@untitledui.com"}/>
+      <ForgotPassword/>
 
     </div>
   );
