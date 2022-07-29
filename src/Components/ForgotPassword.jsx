@@ -16,7 +16,7 @@ export default function ForgotPassword(){
     function handleSendEmailLink(e){
 
         e.preventDefault();
-        console.log(email);
+        // console.log(email);
 
         if(!linkSent&&email){
             setLinkSent(true);
@@ -65,7 +65,7 @@ export default function ForgotPassword(){
                             />
                         </form>
                     ):null}
-                    <Button size={"lg"} width={"20em"} type={"default"} text={!linkSent?("Reset password"):("Open email app")} onClick={handleSendEmailLink}/>
+                    <Button size={"lg"} width={"20rem"} type={"default"} text={!linkSent?("Reset password"):("Open email app")} onClick={handleSendEmailLink}/>
 
                 </main>
 

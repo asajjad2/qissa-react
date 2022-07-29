@@ -69,7 +69,7 @@ export default function EmailVerification({email}){
                                 
                         </div>
                     ))}
-                    <Button size={"lg"} width={"20em"} type={"default"} text={!codeEntered?("Enter code manually"):(!isVerified?("Verify email"):("Continue"))} onClick={handleEmailVerification}/>
+                    <Button size={"lg"} width={"20rem"} type={"default"} text={!codeEntered?("Enter code manually"):(!isVerified?("Verify email"):("Continue"))} onClick={handleEmailVerification}/>
 
                 </main>
 
