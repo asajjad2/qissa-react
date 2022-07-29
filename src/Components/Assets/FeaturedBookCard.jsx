@@ -11,7 +11,7 @@ export default function FeatureBookCard({cardTitle,cardDetails,bookname,imgSrc})
                     <p className="text-md normal">{cardDetails}</p>
                     <h4 className="text-md medium italic">{bookname}</h4>
                 </div>
-                <Button type="secondary" size="medium" text="View Book"/>
+                <Button type="secondary" size="md" text="View Book"/>
             </div>
         </div>
     );

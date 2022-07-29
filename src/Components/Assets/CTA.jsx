@@ -9,7 +9,7 @@ export default function({imgSrc,text,buttonText}){
         <div className="CTA" style={{background:bg}}>
             <div className="info">
                 <h2 className="text-xl semibold">{text}</h2>
-                <Button type="default" size="medium" text={buttonText}/>
+                <Button type="default" size="md" text={buttonText}/>
             </div>
         </div>
     )

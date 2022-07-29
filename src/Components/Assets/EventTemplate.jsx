@@ -44,7 +44,7 @@ export default function EventTemplate({
           </div>
         </div>
       </section>
-      <Button size="medium" type="outlined" text="Learn More"></Button>
+      <Button size="md" type="outlined" text="Learn More"></Button>
     </div>
   );
 }

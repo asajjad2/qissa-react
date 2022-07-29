@@ -11,7 +11,7 @@ export default function SubscribeSection({ heading, subheading}) {
           </div>
           <div className="input">
               <input type="text" placeholder="Enter your email to subscribe"/>
-              <Button type="default" size="medium" text="Subscribe"/>
+              <Button type="default" size="md" text="Subscribe"/>
           </div>
       </div>
     </div>

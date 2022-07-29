@@ -80,7 +80,7 @@ export default function HomePage() {
               imageLink={translate}
             />
           </div>
-          <Button size="medium" type="outlined" text="view all services" radius="2px"/>
+          <Button size="md" type="outlined" text="view all services" radius="2px"/>
         </section>
 
         <section className="blog">
