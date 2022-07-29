@@ -1,7 +1,7 @@
 
 import Button from "./Button"
 
-export default function({imgSrc,text,buttonText}){
+export default function CTA({imgSrc,text,buttonText}){
 
     let bg = imgSrc? `url(${imgSrc})` : "black";
 

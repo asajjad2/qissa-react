@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import ReactInputVerificationCode from 'react-input-verification-code';
+
 import mailVerification from "./Assets/images/mail-verification.svg";
 import mailVerified from "./Assets/images/mail-verified.svg";
 import prev from "./Assets/images/prev.svg";
@@ -9,9 +11,23 @@ import Button from "./Assets/Button";
 import "./EmailVerification.scss";
 
 export default function EmailVerification({email}){
+ 
+    const [code, setCode] = useState("");
 
-    const [codeEntered,setCodeEntered] = useState(true);
-    const [isVerified,setIsVerified] = useState(false);
+    const [codeEntered,setCodeEntered] = useState(false);
+    const [isVerified,setIsVerified] = useState(false); 
+
+    function handleEmailVerification(){
+        if(!isVerified){
+            if(!codeEntered){
+                setCodeEntered(true);
+            } else if(codeEntered){
+                setIsVerified(true);
+            }
+        }
+    }
+
+
 
     return (
         <div className="email-verification">
@@ -23,7 +39,7 @@ export default function EmailVerification({email}){
                         isVerified?(mailVerified):(mailVerification)
                     } alt="verification icon" />
                     <div className="text">
-                        <h2>
+                        <h2 className="capitalize">
                             {
                                 isVerified?("Email verified"):("Check your email")
                             }
@@ -36,7 +52,27 @@ export default function EmailVerification({email}){
                     </div>
                 </header>
 
-                <Button size={"lg"} width={"20em"} type={"default"} text={!codeEntered?("Enter code manually"):(!isVerified?("Verify email"):("Continue"))}/>
+                <main>
+
+                    {!codeEntered?(null):(isVerified?(null):(
+                        <div className="verification-code">
+                            <ReactInputVerificationCode
+                                placeholder={null}
+                                length={4}
+                                value={code}
+                                className={"display-lg medium input"}
+                                onChange={(newValue) => {
+                                    setCode(newValue);
+                                    console.log(newValue);
+                                }}
+                            />
+                                
+                        </div>
+                    ))}
+                    <Button size={"lg"} width={"20em"} type={"default"} text={!codeEntered?("Enter code manually"):(!isVerified?("Verify email"):("Continue"))} onClick={handleEmailVerification}/>
+
+                </main>
+
 
                 {
                     codeEntered?(
