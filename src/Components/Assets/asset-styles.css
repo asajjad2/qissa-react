@@ -63,13 +63,18 @@
     gap: 0.5em;
   }
   
-  .button.medium {
+  .button.md{
     width: 130px;
     height: 40px;
   }
 
   .button.sm{
     height: 20px;
+  }
+
+  .button.lg{
+    height: 44px;
+    padding: 10px 18px;
   }
   
   .button.x-lg {

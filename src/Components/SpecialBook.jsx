@@ -27,25 +27,6 @@ export default function WishList({category}){
     const [activePageNum, setActivePageNum] = useState(1);
 
 
-    for(let i=1;i<4;i++){
-
-        let lastBooksRemaining = listData.length % 25;
-
-        if(i!==totalPages){
-            let Books = listData.filter(function(currentValue, index, arr){
-                return (index>=((i-1)*25)&&index<(((i-1)*25)+25))
-            });
-            // console.log(Books);
-            // setCurrentBooks(listData.slice(Books,25));
-        } else {
-            let Books = listData.filter(function(currentValue, index, arr){
-                return (index>=((i-1)*25)&&index<(((i-1)*25)+lastBooksRemaining))
-            });
-            // console.log(Books);
-            // setCurrentBooks(lastBooks);
-        }
-    }
-
     useEffect(() => {
 
         function handleClick(activePage){  

@@ -6,7 +6,8 @@ export default function Button(props) {
     width: props.width?props.width:null,
     height: props.height?props.height:null,
     borderRadius: props.radius?props.radius:null,
-    color : props.color?props.color:null
+    color : props.color?props.color:null,
+    display : props.display?props.display:null
   }
 
 
@@ -16,7 +17,7 @@ export default function Button(props) {
       style={localStyle}
       onClick = {props.onClick}
     >
-      {props.leading?(<img src={props.leading} alt={"leading icon"}/>):null}
+      {props.leading?(<img src={props.leading} alt={"leading icon"} width={props.imgWidth} height={props.imageHeight}/>):null}
       {props.text}
       {props.trailing?(<img src={props.trailing} alt={"trailing icon"}/>):null}
     </div>

@@ -27,8 +27,8 @@ export default function Careers(){
           <h2 className="display-md semibold">Meet Our Team</h2>
           <p className="text-md medium text-gray">Nullam at feugiat lectus. Nunc tempus nulla non eros iaculis, varius sollicitudin turpis ultrices. Pellentesque faucibus nec ex non consequat.</p>
           <div className="btns">
-            <Button size={"medium"} type={"default"} text={"About us"} />
-            <Button size={"medium"} type={"secondary"} text={"careers"} />
+            <Button size={"md"} type={"default"} text={"About us"} />
+            <Button size={"md"} type={"secondary"} text={"careers"} />
           </div>
         </div>
 

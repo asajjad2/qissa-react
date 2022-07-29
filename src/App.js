@@ -7,6 +7,7 @@ import Careers from "./Components/Careers";
 import Team from "./Components/Team";
 import SpecialBook from "./Components/SpecialBook";
 import Events from "./Components/Events";
+import EmailVerification from "./Components/EmailVerification";
 
 export default function App() {
   
@@ -70,6 +71,7 @@ export default function App() {
       <SpecialBook category={"wishlist"}/>
       <SpecialBook category={"Bestselling"}/>
       <Events />
+      <EmailVerification email={"olivia@untitledui.com"}/>
 
     </div>
   );
