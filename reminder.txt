@@ -1,0 +1,13 @@
+1. Check components which can break if amount of content changed
+2. Check for responsiveness (non-mobile)
+3. Check if text sizing classes can be further broken down
+4. hover animations, carousel research (animation related stuff)
+5.different css files shouldn't interfere
+6. OnClick events - (
+    Animations-
+        -> Tag Buttons in Shop your next book
+    Routing-
+)
+7.How do I route to different pages? (both local and web links) Do <a href> work or something else?
+8.How to manage common scss?
+9.How to handle repetetion of import code e.g. navlinks data
