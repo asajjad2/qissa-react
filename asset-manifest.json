@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qissa-react/static/css/main.54414d5c.css",
-    "main.js": "/qissa-react/static/js/main.16bff7d8.js",
+    "main.css": "/qissa-react/static/css/main.77dee051.css",
+    "main.js": "/qissa-react/static/js/main.8ef844e9.js",
     "static/media/header-bg.png": "/qissa-react/static/media/header-bg.887a6c08c19d71996394.png",
     "static/media/author-img.png": "/qissa-react/static/media/author-img.463b0155d998829e4433.png",
     "static/media/bgCTA-02.png": "/qissa-react/static/media/bgCTA-02.db5f2cce7d0415887228.png",
@@ -40,11 +40,11 @@
     "static/media/next.svg": "/qissa-react/static/media/next.9bf909b567460dad787c72a077008013.svg",
     "static/media/prev.svg": "/qissa-react/static/media/prev.521f24f9618230e8f6dd995fe831a155.svg",
     "static/media/right.svg": "/qissa-react/static/media/right.bf8f1ed28cdd3686ba2a248bbc2182d6.svg",
-    "main.54414d5c.css.map": "/qissa-react/static/css/main.54414d5c.css.map",
-    "main.16bff7d8.js.map": "/qissa-react/static/js/main.16bff7d8.js.map"
+    "main.77dee051.css.map": "/qissa-react/static/css/main.77dee051.css.map",
+    "main.8ef844e9.js.map": "/qissa-react/static/js/main.8ef844e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.54414d5c.css",
-    "static/js/main.16bff7d8.js"
+    "static/css/main.77dee051.css",
+    "static/js/main.8ef844e9.js"
   ]
 }
