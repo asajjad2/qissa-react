@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qissa-react/static/css/main.77dee051.css",
-    "main.js": "/qissa-react/static/js/main.8ef844e9.js",
+    "main.css": "/qissa-react/static/css/main.921f3bc2.css",
+    "main.js": "/qissa-react/static/js/main.3ed46691.js",
     "static/media/header-bg.png": "/qissa-react/static/media/header-bg.887a6c08c19d71996394.png",
     "static/media/author-img.png": "/qissa-react/static/media/author-img.463b0155d998829e4433.png",
     "static/media/bgCTA-02.png": "/qissa-react/static/media/bgCTA-02.db5f2cce7d0415887228.png",
@@ -17,6 +17,7 @@
     "static/media/instagram-outlined.svg": "/qissa-react/static/media/instagram-outlined.2fd981b2eda11b157e376e94733a8592.svg",
     "static/media/shipping.svg": "/qissa-react/static/media/shipping.62856e6f70dbf82ce95deb71bbacf97c.svg",
     "static/media/twitter.svg": "/qissa-react/static/media/twitter.c80a5b458e7b723d4d159e16e66813fd.svg",
+    "static/media/reset-pass.svg": "/qissa-react/static/media/reset-pass.69fa7cf41313fd8aab236c7976e9e94c.svg",
     "static/media/cart.svg": "/qissa-react/static/media/cart.b92b8e302bec2fa691416f4587ddd38e.svg",
     "static/media/twitter-clr.svg": "/qissa-react/static/media/twitter-clr.2f57d76da305322925bb2268435ef3bd.svg",
     "static/media/gmail-clr.svg": "/qissa-react/static/media/gmail-clr.4be87c7429862fb0ef73d2a5e3febb8a.svg",
@@ -40,11 +41,11 @@
     "static/media/next.svg": "/qissa-react/static/media/next.9bf909b567460dad787c72a077008013.svg",
     "static/media/prev.svg": "/qissa-react/static/media/prev.521f24f9618230e8f6dd995fe831a155.svg",
     "static/media/right.svg": "/qissa-react/static/media/right.bf8f1ed28cdd3686ba2a248bbc2182d6.svg",
-    "main.77dee051.css.map": "/qissa-react/static/css/main.77dee051.css.map",
-    "main.8ef844e9.js.map": "/qissa-react/static/js/main.8ef844e9.js.map"
+    "main.921f3bc2.css.map": "/qissa-react/static/css/main.921f3bc2.css.map",
+    "main.3ed46691.js.map": "/qissa-react/static/js/main.3ed46691.js.map"
   },
   "entrypoints": [
-    "static/css/main.77dee051.css",
-    "static/js/main.8ef844e9.js"
+    "static/css/main.921f3bc2.css",
+    "static/js/main.3ed46691.js"
   ]
 }
