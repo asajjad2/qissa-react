@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qissa-react/static/css/main.921f3bc2.css",
-    "main.js": "/qissa-react/static/js/main.3ed46691.js",
+    "main.css": "/qissa-react/static/css/main.fc723b4d.css",
+    "main.js": "/qissa-react/static/js/main.22c28375.js",
     "static/media/header-bg.png": "/qissa-react/static/media/header-bg.887a6c08c19d71996394.png",
     "static/media/author-img.png": "/qissa-react/static/media/author-img.463b0155d998829e4433.png",
     "static/media/bgCTA-02.png": "/qissa-react/static/media/bgCTA-02.db5f2cce7d0415887228.png",
@@ -10,13 +10,18 @@
     "static/media/logo2.svg": "/qissa-react/static/media/logo2.2f1d89fbf625b899a7c1067c8b8f3e63.svg",
     "static/media/logo-group.svg": "/qissa-react/static/media/logo-group.4a5d08f88fecd70147b31a17cea23dc1.svg",
     "static/media/graphic-design.svg": "/qissa-react/static/media/graphic-design.f8d5eb2d1b67fbdab8f9ce1cf75f66cb.svg",
+    "static/media/easypaisa.svg": "/qissa-react/static/media/easypaisa.50bd0cac8a3e2295b2ea6152d8e0d3dd.svg",
     "static/media/translate.svg": "/qissa-react/static/media/translate.6a9c700c4bdb4858b8dc2dee0eee20fb.svg",
     "static/media/printer.svg": "/qissa-react/static/media/printer.9fd7d9a7b1302ff3bf52b54ad321eabc.svg",
+    "static/media/jazzcash.svg": "/qissa-react/static/media/jazzcash.ea58fc08a68f62d76529020ccc49b6d9.svg",
     "static/media/pen.svg": "/qissa-react/static/media/pen.3294192a931be49885edb9d835a82c4e.svg",
     "static/media/instagram.svg": "/qissa-react/static/media/instagram.6ced04dd72264116e2445eaa2b765c9b.svg",
     "static/media/instagram-outlined.svg": "/qissa-react/static/media/instagram-outlined.2fd981b2eda11b157e376e94733a8592.svg",
+    "static/media/cash.svg": "/qissa-react/static/media/cash.e96f0da0392d197383453143f2df5487.svg",
     "static/media/shipping.svg": "/qissa-react/static/media/shipping.62856e6f70dbf82ce95deb71bbacf97c.svg",
     "static/media/twitter.svg": "/qissa-react/static/media/twitter.c80a5b458e7b723d4d159e16e66813fd.svg",
+    "static/media/credit.svg": "/qissa-react/static/media/credit.b27b5d434802acd9894298974fc86644.svg",
+    "static/media/google.svg": "/qissa-react/static/media/google.9610fe75f4eef4af3a698ff1d342b2a7.svg",
     "static/media/reset-pass.svg": "/qissa-react/static/media/reset-pass.69fa7cf41313fd8aab236c7976e9e94c.svg",
     "static/media/cart.svg": "/qissa-react/static/media/cart.b92b8e302bec2fa691416f4587ddd38e.svg",
     "static/media/twitter-clr.svg": "/qissa-react/static/media/twitter-clr.2f57d76da305322925bb2268435ef3bd.svg",
@@ -28,6 +33,7 @@
     "static/media/mail-verified.svg": "/qissa-react/static/media/mail-verified.9fb85fc8a6a4e1222651486bad4a4afc.svg",
     "static/media/facebook2.svg": "/qissa-react/static/media/facebook2.73dfa28d566bcafacc9952b566a4aa43.svg",
     "static/media/location.svg": "/qissa-react/static/media/location.ed62d0b0429fd52c138523a040b08f1b.svg",
+    "static/media/bin.svg": "/qissa-react/static/media/bin.1c82c69a61e1b25293aa356a592fec71.svg",
     "static/media/logo3.svg": "/qissa-react/static/media/logo3.d2345914c928917f773d1508fdf60811.svg",
     "static/media/mail-verification.svg": "/qissa-react/static/media/mail-verification.45fec0ac0cb5970ac29fd6cba08e0b5f.svg",
     "static/media/facebook.svg": "/qissa-react/static/media/facebook.557d41a2eb495204b98891cfb1edb77c.svg",
@@ -41,11 +47,11 @@
     "static/media/next.svg": "/qissa-react/static/media/next.9bf909b567460dad787c72a077008013.svg",
     "static/media/prev.svg": "/qissa-react/static/media/prev.521f24f9618230e8f6dd995fe831a155.svg",
     "static/media/right.svg": "/qissa-react/static/media/right.bf8f1ed28cdd3686ba2a248bbc2182d6.svg",
-    "main.921f3bc2.css.map": "/qissa-react/static/css/main.921f3bc2.css.map",
-    "main.3ed46691.js.map": "/qissa-react/static/js/main.3ed46691.js.map"
+    "main.fc723b4d.css.map": "/qissa-react/static/css/main.fc723b4d.css.map",
+    "main.22c28375.js.map": "/qissa-react/static/js/main.22c28375.js.map"
   },
   "entrypoints": [
-    "static/css/main.921f3bc2.css",
-    "static/js/main.3ed46691.js"
+    "static/css/main.fc723b4d.css",
+    "static/js/main.22c28375.js"
   ]
 }
