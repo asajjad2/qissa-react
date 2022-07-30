@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import NavDesktop from "./Assets/NavDesktop";
 import BreadCrumbs from "./Assets/BreadCrumbs";
 import Button from "./Assets/Button";
@@ -14,7 +16,52 @@ let pathItems = ["Contact"];
 
 export default function Contact(){
 
+    const emptyUserObject= {
+        name : "",
+        email : "",
+        phone : "",
+        message : ""
+    }
 
+    const [userInfoObject,setUserInfoObject] = useState(emptyUserObject);
+
+    function handleSubmit(){
+
+        if(userInfoObject.name && userInfoObject.email)
+            console.log(userInfoObject);
+    }
+
+    function handleInputChange({name,value}){
+
+
+        setUserInfoObject((previousValue)=>{
+
+            if(name==="name"){
+                return {
+                    ...previousValue,
+                    name : value
+                };
+            } else if(name==="email"){
+                return {
+                    ...previousValue,
+                    email : value
+                };
+            } else if(name==="phone"){
+                return {
+                    ...previousValue,
+                    phone : value
+                };
+            } else if(name==="message"){
+                return {
+                    ...previousValue,
+                    message : value
+                };
+            }
+            
+        })
+
+        
+    }
 
     return (
         <div className="contact">
@@ -39,10 +86,10 @@ export default function Contact(){
                             <div>
                                 <h4 className="text-sm medium text-gray">Name *</h4>
                                 <input
-                                    // onChange={e=>handleInputChange(e.target)}
+                                    onChange={e=>handleInputChange(e.target)}
                                     type="text"
                                     placeholder="Enter your name"
-                                    // value={userInfoObject.password}
+                                    value={userInfoObject.name}
                                     className={"text-md normal"}
                                     name="name"
                                     required
@@ -52,10 +99,10 @@ export default function Contact(){
                             <div>
                                 <h4 className="text-sm medium text-gray">Email *</h4>
                                 <input
-                                    // onChange={e=>handleInputChange(e.target)}
+                                    onChange={e=>handleInputChange(e.target)}
                                     type="text"
                                     placeholder="Enter your email"
-                                    // value={userInfoObject.password}
+                                    value={userInfoObject.email}
                                     className={"text-md normal"}
                                     name="email"
                                     required
@@ -65,10 +112,10 @@ export default function Contact(){
                             <div>
                                 <h4 className="text-sm medium text-gray">Phone Number</h4>
                                 <input
-                                    // onChange={e=>handleInputChange(e.target)}
+                                    onChange={e=>handleInputChange(e.target)}
                                     type="text"
                                     placeholder="Enter your phone number"
-                                    // value={userInfoObject.password}
+                                    value={userInfoObject.phone}
                                     className={"text-md normal"}
                                     name="phone"
                                     required
@@ -78,19 +125,19 @@ export default function Contact(){
                             <div>
                                 <h4 className="text-sm medium text-gray">Message</h4>
                                 <textarea
-                                    // onChange={e=>handleInputChange(e.target)}
+                                    onChange={e=>handleInputChange(e.target)}
                                     type="text"
                                     placeholder="Enter your message..."
-                                    // value={userInfoObject.password}
+                                    value={userInfoObject.message}
                                     className={"text-md normal message"}
-                                    name="name"
+                                    name="message"
                                     required
                                 />
                             </div>
                         </div>
                         
 
-                        <Button size={"x-lg"} type={"default"} text={"Submit"}/>
+                        <Button size={"x-lg"} type={"default"} text={"Submit"} onClick={handleSubmit}/>
 
                     </form>
                     <div className="get-in-touch">
