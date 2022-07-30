@@ -29,6 +29,12 @@ export default function Contact(){
 
         if(userInfoObject.name && userInfoObject.email)
             console.log(userInfoObject);
+
+        setUserInfoObject(()=>{
+            return {
+                ...emptyUserObject
+            }
+        });
     }
 
     function handleInputChange({name,value}){

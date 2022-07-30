@@ -12,6 +12,8 @@ import ForgotPassword from "./Components/ForgotPassword";
 import ResetPassword from "./Components/ResetPassword";
 import LoginSignup from "./Components/LoginSignup";
 import Contact from "./Components/Contact";
+import Payment from "./Components/Payment";
+
 
 export default function App() {
   
@@ -67,20 +69,20 @@ export default function App() {
 
 
 
-      {/* <HomePage/>
+      <HomePage/>
       <BookStore/>
       <Author authorname={"Dania Khan"}/>
       <Careers />
       <Team />
       <SpecialBook category={"wishlist"}/>
       <SpecialBook category={"Bestselling"}/>
-      <Events /> */}
+      <Events />
       <EmailVerification email={"olivia@untitledui.com"}/>
       <ForgotPassword/>
       <ResetPassword />
       <LoginSignup />
       <Contact />
-      
+      <Payment />
     </div>
   );
 }
