@@ -18,10 +18,13 @@ export default function ResetPassword(){
     const [passwordObject,setPasswordObject] = useState(pass);
 
     function handleResetPassword(){
-        setResetComplete(true);
+        if(passwordObject.password&&passwordObject.confirmPassword)
+            setResetComplete(true);
     }
 
     function handlePasswordChange({name,value}){
+
+        console.log(name);
 
         setPasswordObject((previousValue)=>{
             if(name==="password"){
@@ -73,23 +76,23 @@ export default function ResetPassword(){
                             <div>
                                 <h4 className="text-sm medium text-gray">Password</h4>
                                 <input
-                                    onChange={handlePasswordChange}
+                                    onChange={e=>handlePasswordChange(e.target)}
                                     type="password"
                                     placeholder="Password"
-                                    value={pass.password}
+                                    value={passwordObject.password}
                                     className={"text-md normal"}
-                                    name={"password"}
+                                    name="password"
                                 />
                             </div>
                             <div>
                                 <h4 className="text-sm medium text-gray">Confirm Password</h4>
                                 <input
-                                    onChange={handlePasswordChange}
+                                    onChange={e=>handlePasswordChange(e.target)}
                                     type="password"
                                     placeholder="Confirm Password"
-                                    value={pass.confirmPassword}
+                                    value={passwordObject.confirmPassword}
                                     className={"text-md normal"}
-                                    name={"confirm-password"}
+                                    name="confirm-password"
                                 />
                             </div>
                         </form>

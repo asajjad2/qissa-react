@@ -10,6 +10,7 @@ import Events from "./Components/Events";
 import EmailVerification from "./Components/EmailVerification";
 import ForgotPassword from "./Components/ForgotPassword";
 import ResetPassword from "./Components/ResetPassword";
+import LoginSignup from "./Components/LoginSignup";
 
 export default function App() {
   
@@ -76,6 +77,8 @@ export default function App() {
       <EmailVerification email={"olivia@untitledui.com"}/>
       <ForgotPassword/>
       <ResetPassword />
+      <LoginSignup />
+
     </div>
   );
 }
